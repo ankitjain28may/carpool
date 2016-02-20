@@ -1,0 +1,24 @@
+body {
+	background-color: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 1.8em;
+	background-color: #434343;
+}
+nav {
+	padding: 30px;
+	height: 50%;
+	color: #fff;
+	background-color: #000;
+}
+section {
+	padding: 10% 15%;
+	background-color: white;
+
+}
+hr {
+	width: 35%;
+}
