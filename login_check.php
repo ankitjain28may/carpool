@@ -24,6 +24,6 @@ $b = $a->num_rows;
  {
  	session_start();
  	$_SESSION['email']=$email;
-    header('Location: http://10.60.81.65:8080/carpool/home.php');
+    header('Location: home.php');
 }
 ?>

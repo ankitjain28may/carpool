@@ -54,7 +54,7 @@
         <div class="form-group">
         	<div class="row">
         		<div class="col-sm-offset-3 col-xs-offset-1">
-        		<a href="register.html">If you are new , Register here</a>
+        		<a href="index.php">If you are new , Register here</a>
         		</div>
         	</div>
         </div>

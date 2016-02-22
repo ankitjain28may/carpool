@@ -17,7 +17,7 @@ $bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_datab
 $query = "INSERT INTO member  VALUES(null, '$user', '$email', '$pass', '$rpass')";
 mysqli_query($bd, $query);
 
-header('Location: http://10.60.81.65:8080/carpool/home.php');
+header('Location: home.php');
 //mysql_close($bd);
 
 
