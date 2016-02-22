@@ -12,7 +12,7 @@ die();
 else
 {
 
-	unset($_SESSION);
+	unset($_SESSION['email']);
     header('Location: login.php');
 }
 

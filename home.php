@@ -1,5 +1,6 @@
 <?php
 session_start();
+
  if(empty($_SESSION['email']))
  {
   echo "Please Login Again";
@@ -52,6 +53,27 @@ session_start();
             <div class="col-sm-6 col-sm-offset-3">
              <p> What is your current location ?</p>
              <br><br>
+               <?php
+
+                if(isset($_SESSION['count']))
+                {
+                include_once "reg.php";
+                $to=$_SESSION['email'];
+                $subject='This is a verification mail';
+                $body='Login to ur account with this credentials
+                Email=($_SESSION["email"]) and your password';
+                $headers='From: noreply@carpool.com';
+
+                if(mail($to, $subject, $body, $headers)) {
+                  echo 'Email has been sent'.$to;
+                }
+                else
+                {
+                  echo 'There is an error in sending Email';
+                }
+              }
+                unset($_SESSION['count']);
+                ?>
         <select class="form-control" onchange="location = this.options[this.selectedIndex].value;">
           <option>Select from the options.....!!!</option>
           <option value="index-1.php">City Center (Sec 37) , Noida</option>

@@ -47,7 +47,7 @@
             </div>
             <div class="col-sm-4 col-xs-offset-1 col-sm-offset-4">
             	<br>
-            	<a href="">Forgot Password ?</a>        
+            	<a href="forgot.php">Forgot Password ?</a>        
             </div>          
         </div>
         <br> <br>

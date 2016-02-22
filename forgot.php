@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang = "en">
    
@@ -24,41 +22,21 @@
    <div class="jumbotron">
       	<div class="row">
       		<div class="col-sm-8 col-sm-offset-2">
-      		<h3><span class="glyphicon glyphicon-triangle-right"></span>&nbsp;Register</h3>
+      		<h3><span class="glyphicon glyphicon-triangle-right"></span>&nbsp;Forgot Password</h3>
       		<br>
       		</div>
         </div>
-        <form class="form-horizontal" role="form" id="myform" method="post" action="code_exec.php">
-        <div class="form-group has-feedback">
-        	<div class="col-sm-8 col-sm-offset-2">
-        		<span class="form-control-feedback glyphicon glyphicon-heart"></span>
-        	<input type="name" class="form-control" name="user" placeholder="Name" required >
-
-        	</div>
-
-        </div>
+        <form class="form-horizontal" role="form" id="myform" method="post" action="forgor_check.php">
+        
         <div class="form-group has-feedback">
           <div class="col-sm-8 col-sm-offset-2">
             <span class="form-control-feedback glyphicon glyphicon-user"></span>
-          <input type="email" class="form-control" name="email" placeholder="E-mail" required >
+          <input type="email" class="form-control" name="forg" placeholder="E-mail" required >
 
           </div>
           
         </div>
-        <div class="form-group has-feedback">
-        	<div class="col-sm-8 col-sm-offset-2">
-        		<span class="form-control-feedback glyphicon glyphicon-pencil"></span>
-         	<input type="password" class="form-control" name="pass" placeholder="Password" required >
-         	</div>
-        </div>
-        <div class="form-group has-feedback">
-          <div class="col-sm-8 col-sm-offset-2">
-            <span class="form-control-feedback glyphicon glyphicon-thumbs-up"></span>
-          <input type="password" class="form-control" name="rpass" placeholder="Retype Password" required >
-
-          </div>
-          
-        </div>
+       
         <br>
         <div class="form-group">
         	<div class="row">
@@ -67,14 +45,13 @@
             </div>
             <div class="col-sm-4 col-xs-offset-1 col-sm-offset-4">
             	<br>
-            	<a href="forgot.php">Forgot Password ?</a>        
-            </div>          
+            	
         </div>
         <br> <br>
         <div class="form-group">
         	<div class="row">
         		<div class="col-sm-offset-3 col-xs-offset-1">
-        		<a href="login.php">If you have already registered , click here to Login</a>
+        		<a href="login.php">Click here to Login</a>
         		</div>
         	</div>
         </div>
