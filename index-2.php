@@ -3,7 +3,7 @@ session_start();
  if(empty($_SESSION['email']))
  {
   echo "Please Login Again";
-  header('Location: localhost:8080/carpool/login.html');
+  header('Location: login.html');
  }
  else
  {
@@ -31,8 +31,8 @@ session_start();
         <div class="col-sm-4">
           <h4>Drive in Pool</h4>
           </div>
-        <div class="col-sm-2 col-sm-offset-4"><a href="localhost:8080/carpool/about.html"><h4>About Us</h4></a></div>
-        <div class="col-sm-2"><a href="localhost:8080/carpool/login.php"><h4>Log Out</h4></a></div>
+        <div class="col-sm-2 col-sm-offset-4"><a href="about.html"><h4>About Us</h4></a></div>
+        <div class="col-sm-2"><a href="login.php"><h4>Log Out</h4></a></div>
     </div>
    </div>
    <div class="container ">
