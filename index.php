@@ -16,7 +16,7 @@
    
    <body>
     <div class="nav">
-      <h3>Drive in Pool</h3>
+      <h3 style="color:white">Drive in Pool</h3>
    </div>
    <div class="container ">
    	<div class="row">
@@ -50,12 +50,19 @@
         		<span class="form-control-feedback glyphicon glyphicon-pencil"></span>
          	<input type="password" class="form-control" name="pass" placeholder="Password" required >
          	</div>
+
         </div>
-        <div class="form-group has-feedback">
+       <!--<div class="form-group has-feedback">
           <div class="col-sm-8 col-sm-offset-2">
             <span class="form-control-feedback glyphicon glyphicon-thumbs-up"></span>
           <input type="password" class="form-control" name="rpass" placeholder="Retype Password" required >
+          </div>-->
 
+          
+           <div class="form-group has-feedback">
+          <div class="col-sm-8 col-sm-offset-2">
+            <span class="form-control-feedback glyphicon glyphicon-thumbs-up"></span>
+          <input type="tel" class="form-control" name="rpass" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10" required >
           </div>
           
         </div>

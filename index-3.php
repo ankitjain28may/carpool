@@ -3,7 +3,7 @@ session_start();
  if(empty($_SESSION['email']))
  {
   echo "Please Login Again";
-  header('Location: login.html');
+  header('Location: login.php');
  }
  else
  {
@@ -33,7 +33,7 @@ session_start();
           <h4>Drive in Pool</h4>
           </div>
         <div class="col-sm-2 col-sm-offset-4"><a href="about.html"><h4>About Us</h4></a></div>
-        <div class="col-sm-2"><a href="login.php"><h4>Log Out</h4></a></div>
+        <div class="col-sm-2"><a href="logout.php"><h4>Log Out</h4></a></div>
     </div>
    </div>
    <div class="container ">

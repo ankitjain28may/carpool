@@ -3,8 +3,8 @@
 
 session_start();
 #setcookie('email', 'pass' ,10, "/"); // 86400 = 1 day
-$u = $_SESSION['email'];
-if(empty($u))
+
+if(empty($_SESSION['email']))
 {
 echo "Please Login";
 die();

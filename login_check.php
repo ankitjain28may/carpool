@@ -10,8 +10,8 @@ $prefix = "";
 $bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database) or die("Could not connect database");
 
 
-
-$q2 = "Select * from member where email = '$email' and pass = '$pass'";
+$pass1 = md5($pass);
+$q2 = "Select * from member where email = '$email' and pass = '$pass1'";
 $a = mysqli_query($bd, $q2);
 $b = $a->num_rows;
 

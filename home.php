@@ -41,7 +41,7 @@ session_start();
           <h4>Drive in Pool</h4>
           </div>
         <div class="col-sm-2 col-sm-offset-4"><a href="about.html"><h4>About Us</h4></a></div>
-        <div class="col-sm-2"><a href="login.php"><h4>Log Out</h4></a></div>
+        <div class="col-sm-2"><a href="logout.php"><h4>Log Out</h4></a></div>
     </div>
    </div>
    <div class="container ">
@@ -65,7 +65,7 @@ session_start();
                 $headers='From: noreply@carpool.com';
 
                 if(mail($to, $subject, $body, $headers)) {
-                  echo 'Email has been sent'.$to;
+                  echo 'Email has been sent';
                 }
                 else
                 {
