@@ -8,7 +8,7 @@ $rpass=$_POST['rpass'];
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 
-  echo("$email is a valid email address");
+
 
 $mysql_hostname = "localhost";
 $mysql_user = "root";
