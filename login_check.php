@@ -1,29 +1,42 @@
 <?php
+
 $email=$_POST['email'];
 $pass=$_POST['pass'];
 
 $mysql_hostname = "localhost";
 $mysql_user = "root";
 $mysql_password = "";
-$mysql_database = "simple_login";
+$mysql_database = "carpool";
 $prefix = "";
-$bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database) or die("Could not connect database");
+
+$bd = new mysqli($mysql_hostname, $mysql_user, $mysql_password, $mysql_database) or die("Could not connect database");
+
+$pass1 = md5($pass);  //encrypt the password
+
+$q2 = "SELECT mem_id from account where email = '$email'";  //check for the avalavility of email address
+
+$result=$bd->query($q2);
 
 
-$pass1 = md5($pass);
-$q2 = "Select * from member where email = '$email' and pass = '$pass1'";
-$a = mysqli_query($bd, $q2);
-$b = $a->num_rows;
+$row = $result->fetch_assoc();
+$p= $row["mem_id"];
 
- if($b==0)
- {
+$check = "SELECT pass from login_info where same_id='$p'"; //check for the password
+
+$result=$bd->query($check);
+$row = $result->fetch_assoc();
+$p= $row["pass"];
+
+if($p!=$pass1)
+{
  	echo "Invalid Credentials";
  	die();
- }
- else
- {
+}
+
+else
+{
  	session_start();
- 	$_SESSION['email']=$email;
+ 	$_SESSION['email']=1;
     header('Location: home.php');
 }
 ?>

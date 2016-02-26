@@ -1,5 +1,5 @@
 <?php
-$email=$_POST['email'];
+$email=$_POST['forg'];
 
 $mysql_hostname = "localhost";
 $mysql_user = "root";
@@ -22,6 +22,9 @@ $b = $a->num_rows;
  }
  else
  {
- 	echo "SELECT pass FROM member";
+ 	$p="SELECT username FROM member where email='$email'";
+
+$o = mysqli_query($bd, $p);
+ 	echo $o;
  	}
 ?> 

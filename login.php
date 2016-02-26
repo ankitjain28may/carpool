@@ -1,3 +1,19 @@
+<?php
+session_start();
+if(isset($_SESSION['email']))
+{
+//header("Refresh:0");
+//unset($_SESSION['email']);
+echo "Already Login";
+die();
+}
+else
+{
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
    

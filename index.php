@@ -1,4 +1,16 @@
+<?php
+session_start();
+if (isset($_SESSION['email'])) {
+ 
+  header("Refresh:0");
+   echo "Already Login";
+  die();
+}
 
+
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -62,7 +74,7 @@
            <div class="form-group has-feedback">
           <div class="col-sm-8 col-sm-offset-2">
             <span class="form-control-feedback glyphicon glyphicon-thumbs-up"></span>
-          <input type="tel" class="form-control" name="rpass" placeholder="Mobile" pattern="[0-9]{10}" maxlength="10" required >
+          <input type="tel" class="form-control" name="mob" placeholder="Mobile" required >
           </div>
           
         </div>
